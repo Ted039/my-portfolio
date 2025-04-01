@@ -1,82 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio - [Your Name]</title>
+    <meta name="description" content="Portfolio of a passionate web developer showcasing skills, projects, and more.">
+    <meta name="keywords" content="web development, portfolio, projects, HTML, CSS, JavaScript, developer">
+    <meta name="author" content="Your Name">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
     
     <header>
-        <div class="container">
-            <h1 class="hero-heading">Hi, I'm <span class="highlight">[Your Name]</span></h1>
-            <p class="subtitle">Web Developer | Front-End Enthusiast | Passionate Coder</p>
-            <button id="themeToggle" class="theme-btn">Toggle Dark Mode</button>
-        </div>
+        <h1>My Portfolio</h1>
+        <p class="subtitle">Welcome to my portfolio. I am a Web Developer</p>
+        
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
     </header>
 
     
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a passionate web developer with a focus on front-end technologies. I love solving problems and building beautiful user interfaces. My goal is to continuously improve my skills and create impactful web applications.</p>
-        </div>
+        <h2>About Me</h2>
+        <p>I'm a passionate developer who loves coding and building creative solutions.</p>
     </section>
 
     
     <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">React</div>
-                <div class="skill-card">Git</div>
-                <div class="skill-card">Responsive Design</div>
-            </div>
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
         </div>
     </section>
 
     
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-list">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Short description of your project goes here.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Short description of your project goes here.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-            </div>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+       
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of project 1</p>
+            <a href="https://github.com/your-project1" class="project-link" data-project="project1" aria-label="View Project 1 on GitHub">View on GitHub</a>
         </div>
-    </section>
+        
+       
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of project 2</p>
+            <a href="https://github.com/your-project2" class="project-link" data-project="project2" aria-label="View Project 2 on GitHub">View on GitHub</a>
+        </div>
+    </div>
+</section>
 
+<div id="project1Modal" class="modal" aria-labelledby="project1ModalLabel" role="dialog">
+    <div class="modal-content">
+        <span class="close-btn" aria-label="Close">&times;</span>
+        <h3 id="project1ModalLabel">Project 1 Details</h3>
+        <p>This project is a responsive web application that allows users to track their daily tasks. Built using HTML, CSS, and JavaScript, it enables users to add, update, and remove tasks dynamically.</p>
+        <p>Technologies used: HTML, CSS, JavaScript, and Bootstrap for responsive design.</p>
+        <p>Key Features:
+            <ul>
+                <li>User authentication (login and signup)</li>
+                <li>Task filtering by priority</li>
+                <li>Responsive design for mobile and desktop</li>
+                <li>Real-time task updates using local storage</li>
+            </ul>
+        </p>
+        <p>Challenges faced included managing asynchronous requests and ensuring data was saved to local storage. I overcame this by learning about the Fetch API and using JavaScript promises.</p>
+        <p>Future improvements: I plan to implement user authentication with Firebase and add a feature for recurring tasks.</p>
+        <p>Check out the live demo: <a href="https://yourproject1.com" target="_blank">Live Demo</a></p>
+    </div>
+</div>
+
+
+<div id="project2Modal" class="modal" aria-labelledby="project2ModalLabel" role="dialog">
+    <div class="modal-content">
+        <span class="close-btn" aria-label="Close">&times;</span>
+        <h3 id="project2ModalLabel">Project 2 Details</h3>
+        <p>This project is a personal portfolio website built using HTML, CSS, and JavaScript. It showcases various web development projects and provides an interactive user experience.</p>
+        <p>Technologies used: HTML, CSS, JavaScript, and a bit of jQuery for smooth animations.</p>
+        <p>Key Features:
+            <ul>
+                <li>Interactive portfolio with smooth transitions</li>
+                <li>Responsive design for both desktop and mobile</li>
+                <li>Custom animations using CSS and jQuery</li>
+                <li>Contact form integrated with backend services</li>
+            </ul>
+        </p>
+        <p>Challenges faced included optimizing the portfolio's performance and ensuring cross-browser compatibility. I solved this by using CSS Grid and Flexbox for layout design and testing across multiple browsers.</p>
+        <p>Future improvements: I plan to add a blog section to share my development insights and tutorials.</p>
+        <p>Check out the live demo: <a href="https://yourproject2.com" target="_blank">Live Demo</a></p>
+    </div>
+</div>
     
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">Your LinkedIn Profile</a></p>
-        </div>
-    </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me via email or through the contact form.</p><br>
+    
+    
+    <a href="mailto:your-email@example.com" class="theme-btn">Work with Me</a>
+</section>
 
     
     <footer>
-        <div class="container">
-            <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2025 My Portfolio</p>
+
+        <a href="path/to/your/resume.pdf" download class="resume-link">Download Resume</a>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
