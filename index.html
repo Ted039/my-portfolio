@@ -1,115 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of a passionate web developer showcasing skills, projects, and more.">
     <meta name="keywords" content="web development, portfolio, projects, HTML, CSS, JavaScript, developer">
     <meta name="author" content="Your Name">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
+
 <body>
+    
 
     
-    <header>
-        <h1>My Portfolio</h1>
-        <p class="subtitle">Welcome to my portfolio. I am a Web Developer</p>
+    <div class="sidebar" id="sidebar">
+        <div class="profile-sidebar">
+            <img src="/images/teddy.jpg" alt="Your Name" class="profile-image-sidebar">
+            <h1>Teddy Owino</h1>
+            <p>Software Engineer</p>
+        </div>
+        <ul class="sidebar-links">
+            
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
         
-        <button class="theme-btn" id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
-    </header>
-
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate developer who loves coding and building creative solutions.</p>
-    </section>
-
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">JavaScript</div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/owino-teddy-4a7631205/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Ted039" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:owinoteddy1997@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
-    </section>
+    </div>
 
     
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-       
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Description of project 1</p>
-            <a href="https://github.com/your-project1" class="project-link" data-project="project1" aria-label="View Project 1 on GitHub">View on GitHub</a>
+    <div class="main-content">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    
+                    <li class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moo" id="moon-icon"></i>
+                        <i class="fas fa-su" id="sun-icon" style="display: none;"></i>
+                    </li>
+
+                    <li>
+                        <button id="sidebar-toggle" class="sidebar-toggle-btn">☰</button>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <div class="text-content">
+                    <h1>Hi, I'm Teddy Owino</h1>
+                    <p class="tagline">A Software Engineer</p>
+                    <div class="sub-tagline-wrapper">
+                        <p class="sub-tagline" id="typewriter">Passionate about Building Beautiful Web Applications</p>
+                    </div>
+                    
+                    <button onclick="location.href='#projects'" id="view-my-work-btn" class="view-my-work-btn">View My Work</button>
+                    <button onclick="location.href='#contact'" id="get-in-touch-btn" class="explore-btn">Let's Connect</button>
+                </div>
+               
+                
+                <div class="image-content">
+                    <img src="/images/tedd.jpg" alt="Teddy's Image" class="profile-image">
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <section id="about" class="about-section">
+            <div class="card">
+                <div class="content">
+                    
+                    <div class="text-content">
+                        <h2>About Me</h2>
+                        <p>
+                            Hello, I’m Teddy Owino, a passionate Software developer.
+                        </p>
+                        <p>
+                            I specialize in both <strong>Front-End Development</strong> and <strong>Back-End Development</strong>, which makes me a versatile <strong>Full-Stack Developer</strong>. On the front-end, I work with modern technologies like <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, <strong>React</strong>. On the back-end, I leverage <strong>Python Flask</strong>, and databases like <strong>MySQL</strong> to build robust, scalable server-side applications.
+                        </p>
+                        
+                        <p>
+                             I am always eager to learn new technologies and improve my skills.
+                        </p>
+        
+                        
+                        <div class="stats">
+                            <div class="stat-item">
+                                <button class="stat-btn">1+<br>Years of Experience</button>
+                            </div>
+                            <div class="stat-item">
+                                <button class="stat-btn">2+<br>Completed Projects</button>
+                            </div>
+                        </div>
+        
+                        <a href="path/to/your/cv.pdf" download="Teddy_Owino_CV.pdf">
+                            <button class="download-btn">
+                                <i class="fas fa-download"></i> Download CV
+                            </button>
+                        </a>
+                        
+                    </div>
+        
+                    
+                    <div class="image-content">
+                        <img src="/images/im2.jpg" alt="Teddy Owino" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="skills">
+            <h2>Core Competencies & Technology Stack</h2>
+        
+           
+            <div class="competencies">
+                <div class="competency">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="competency">
+                    <p>Python</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="competency">
+                    <p>React</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="competency">
+                    <p>Flask</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="competency">
+                    <p>UI/UX Design</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        
+           
+            <div class="technology-stack">
+                <div class="tech-category">
+                    <h3>Front-End</h3>
+                    <div class="tech-icons">
+                        <span class="tech-icon">HTML5</span>
+                        <span class="tech-icon">CSS3</span>
+                        <span class="tech-icon">JavaScript</span>
+                        <span class="tech-icon">React</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Back-End</h3>
+                    <div class="tech-icons">
+                        <span class="tech-icon">Node.js</span>
+                        <span class="tech-icon">Flask</span>
+                        <span class="tech-icon">MongoDB</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Tools & Others</h3>
+                    <div class="tech-icons">
+                        <span class="tech-icon">Git</span>
+                        <span class="tech-icon">Docker</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+               
+                <div class="project-card" id="project1Card">
+                    <h3>Community Harvest</h3>
+                    <p>Description of project </p>
+                    <a href="https://github.com/" class="project-link" data-project="project1" aria-label="View Project 1 on GitHub">View on GitHub</a>
+                    <button class="view-details-btn" data-modal="project1Modal" aria-label="View details of Project 1">View Details</button>
+                </div>
+                
+                <div class="project-card" id="project2Card">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2</p>
+                    <a href="https://github.com/your-project2" class="project-link" data-project="project2" aria-label="View Project 2 on GitHub">View on GitHub</a>
+                    <button class="view-details-btn" data-modal="project2Modal" aria-label="View details of Project 2">View Details</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <div id="project1Modal" class="modal" aria-labelledby="project1ModalLabel" role="dialog">
+            <div class="modal-content">
+                <span class="close-btn" aria-label="Close">&times;</span>
+                <h3 id="project1ModalLabel">Community Harvest Initiative</h3>
+                <p>This project is a web application designed to help community members track, manage, and share agricultural resources. Built using Flask, MySQL, HTML, Bootstrap, and CSS, it allows users to register, log in, and update information about available resources and needs within the community.</p>
+                <p>Technologies used: Flask for the back-end, MySQL for the database, and HTML, Bootstrap, and CSS for the front-end design.</p>
+                <p>Key Features:
+                    <ul>
+                        <li>User registration and authentication</li>
+                        <li>Add and update community resources such as food, tools, and seeds</li>
+                        <li>Search functionality for available resources</li>
+                        <li>Responsive design for both mobile and desktop users</li>
+                        <li>Admin panel for managing user data and resources</li>
+                    </ul>
+                </p>
+                <p>Challenges faced included managing user authentication securely and ensuring proper data handling with MySQL. I overcame these challenges by implementing Flask's built-in security features and learning how to properly manage database queries with SQLAlchemy.</p>
+                <p>Future improvements: I plan to integrate real-time chat functionality for community members to communicate and improve the system's scalability to handle larger data sets as the community grows.</p>
+                <p>Check out the live demo: <a href="https://communityharvestinitiative.com" target="_blank">Live Demo</a></p>
+            </div>
         </div>
+
         
        
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Description of project 2</p>
-            <a href="https://github.com/your-project2" class="project-link" data-project="project2" aria-label="View Project 2 on GitHub">View on GitHub</a>
+        <div id="project2Modal" class="modal" aria-labelledby="project2ModalLabel" role="dialog">
+            <div class="modal-content">
+                <span class="close-btn" aria-label="Close">&times;</span>
+                <h3 id="project2ModalLabel">Project 2 Details</h3>
+                <p>This project is a personal portfolio website built using HTML, CSS, and JavaScript. It showcases various web development projects and provides an interactive user experience.</p>
+                <p>Technologies used: HTML, CSS, JavaScript, and a bit of jQuery for smooth animations.</p>
+                <p>Key Features:
+                    <ul>
+                        <li>Interactive portfolio with smooth transitions</li>
+                        <li>Responsive design for both desktop and mobile</li>
+                        <li>Custom animations using CSS and jQuery</li>
+                        <li>Contact form integrated with backend services</li>
+                    </ul>
+                </p>
+                <p>Challenges faced included optimizing the portfolio's performance and ensuring cross-browser compatibility. I solved this by using CSS Grid and Flexbox for layout design and testing across multiple browsers.</p>
+                <p>Future improvements: I plan to add a blog section to share my development insights and tutorials.</p>
+                <p>Check out the live demo: <a href="https://yourproject2.com" target="_blank">Live Demo</a></p>
+            </div>
         </div>
+        
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Interested in collaborating on a project or exploring new opportunities? I'd be thrilled to connect with you. Use the form below to reach out or feel free to contact me directly using the details provided.</p>
+        
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form action="mailto:teddy.owino@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-field">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="your name">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="youremail@gmail.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="send-message-btn">Send Message</button>
+                </form>
+            </div>
+        
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:owinoteddy1997@gmail.com">owinoteddy1997@gmail</a></li>
+                    <li><strong>Phone:</strong> +254705151058</li>
+                    <li><strong>Location:</strong> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </section>
+        
+
+       
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Teddy Owino. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <ul class="social-links">
+                        <a href="https://www.linkedin.com/in/owino-teddy-4a7631205/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ted039" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:owinoteddy1997@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed & Developed by Teddy Owino. <span>Built with passion and creativity.</span></p>
+            </div>
+        </footer>
+        
     </div>
-</section>
-
-<div id="project1Modal" class="modal" aria-labelledby="project1ModalLabel" role="dialog">
-    <div class="modal-content">
-        <span class="close-btn" aria-label="Close">&times;</span>
-        <h3 id="project1ModalLabel">Project 1 Details</h3>
-        <p>This project is a responsive web application that allows users to track their daily tasks. Built using HTML, CSS, and JavaScript, it enables users to add, update, and remove tasks dynamically.</p>
-        <p>Technologies used: HTML, CSS, JavaScript, and Bootstrap for responsive design.</p>
-        <p>Key Features:
-            <ul>
-                <li>User authentication (login and signup)</li>
-                <li>Task filtering by priority</li>
-                <li>Responsive design for mobile and desktop</li>
-                <li>Real-time task updates using local storage</li>
-            </ul>
-        </p>
-        <p>Challenges faced included managing asynchronous requests and ensuring data was saved to local storage. I overcame this by learning about the Fetch API and using JavaScript promises.</p>
-        <p>Future improvements: I plan to implement user authentication with Firebase and add a feature for recurring tasks.</p>
-        <p>Check out the live demo: <a href="https://yourproject1.com" target="_blank">Live Demo</a></p>
-    </div>
-</div>
-
-
-<div id="project2Modal" class="modal" aria-labelledby="project2ModalLabel" role="dialog">
-    <div class="modal-content">
-        <span class="close-btn" aria-label="Close">&times;</span>
-        <h3 id="project2ModalLabel">Project 2 Details</h3>
-        <p>This project is a personal portfolio website built using HTML, CSS, and JavaScript. It showcases various web development projects and provides an interactive user experience.</p>
-        <p>Technologies used: HTML, CSS, JavaScript, and a bit of jQuery for smooth animations.</p>
-        <p>Key Features:
-            <ul>
-                <li>Interactive portfolio with smooth transitions</li>
-                <li>Responsive design for both desktop and mobile</li>
-                <li>Custom animations using CSS and jQuery</li>
-                <li>Contact form integrated with backend services</li>
-            </ul>
-        </p>
-        <p>Challenges faced included optimizing the portfolio's performance and ensuring cross-browser compatibility. I solved this by using CSS Grid and Flexbox for layout design and testing across multiple browsers.</p>
-        <p>Future improvements: I plan to add a blog section to share my development insights and tutorials.</p>
-        <p>Check out the live demo: <a href="https://yourproject2.com" target="_blank">Live Demo</a></p>
-    </div>
-</div>
-    
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me via email or through the contact form.</p><br>
-    
-    
-    <a href="mailto:your-email@example.com" class="theme-btn">Work with Me</a>
-</section>
-
-    
-    <footer>
-        <p>&copy; 2025 My Portfolio</p>
-
-        <a href="path/to/your/resume.pdf" download class="resume-link">Download Resume</a>
-    </footer>
 
     <script src="script.js"></script>
 </body>
