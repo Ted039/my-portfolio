@@ -69,7 +69,8 @@ I’m passionate about continuous learning and am always eager to dive into new 
 - **Challenges**: Ensuring cross-browser compatibility and optimizing performance.
 - **Future Improvements**: Adding a blog section to share my development insights.
 
-[View Project on GitHub](https://github.com/Ted039/my-portfolio)
+
+[View Project on Netlify](https://tubular-beijinho-8b73b0.netlify.app)
 
 ---
 
