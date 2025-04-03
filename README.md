@@ -87,9 +87,8 @@ Feel free to reach out if you're interested in collaborating on a project, have 
 
 This portfolio was built using the following technologies:
 
-- **Front-End**: HTML5, CSS3, JavaScript, React
-- **Back-End**: Python (Flask), MySQL
-- **Tools**: Git, Docker
+- **Front-End**: HTML5, CSS3, JavaScript
+- **Tools**: Git
 
 ---
 
